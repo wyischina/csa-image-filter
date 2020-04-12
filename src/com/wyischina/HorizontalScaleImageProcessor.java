@@ -2,7 +2,11 @@ package com.wyischina;
 
 
 /**
- * An image processor that transform the brightness of an image
+ * An image processor that scales the image horizontally.
+ *
+ * One interesting aspect of this scaling method is that for each column in the original image, it calculates where the resulting column is
+ * in the new image. However, there are columns between the starting column and the resulting column, so we need to fill the columns in between with
+ * the same column pixels to achieve the stretch effect.
  */
 public class HorizontalScaleImageProcessor implements ImageProcessor {
     @Override

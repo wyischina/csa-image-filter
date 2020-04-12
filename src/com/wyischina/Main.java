@@ -16,6 +16,7 @@ public class Main {
         processors.add(new HorizontalShiftImageProcessor());
         processors.add(new HorizontalScaleImageProcessor());
         processors.add(new BoxBlurImageProcessor());
+        processors.add(new RotateImageProcessor());
 
 
         // create the image processor window and display it.
